@@ -1,0 +1,16 @@
+The LEDMachine is a specification for programmatically controlling LEDs through
+a series of PWMs on ATTTiny8{4,5,8} based microcontrollers.
+
+The basic form of the machine has a winbond W25Q32JV 32mbit SPI flash module
+mated to an attiny8x microcontroller. The machine has 16-bit instructions and a
+24-bit memory space where the majority of the space goes unused. There is
+always a PWM pin exposed (two on the attiny84 based mcus) which is hooked up to
+a 3.3v 5mm bright led. The instruction set evolved from being able to write
+analog voltages, delay, and absolute jump to being a full fledged instruction
+set. On the attiny84's there are enough pins to hook in a FRAM module as well
+for persistent storage.
+
+
+The idea for this machine came about from being able to program patterns on an
+LED without having to constantly update the program found on the arduino
+itself. 
