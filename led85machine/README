@@ -1,0 +1,4 @@
+The led85 machine is an attiny85 with an internal stack machine interpreter
+meant to make manipulation of three separate PWMs simpler to do. The program
+must be compiled into the sketch at this time. I have plans to make a version
+which uses an SPI led driver combined with an SPI flash/fram chip as well.
